@@ -13,13 +13,13 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 ### Set computer name (as done via System Preferences → Sharing)
-#sudo scutil --set ComputerName "###INSERT SHORTNAME###"
-#sudo scutil --set HostName "###INSERT SHORTNAME###"
-#sudo scutil --set LocalHostName "###INSERT SHORTNAME###"
-#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "###INSERT SHORTNAME###"
+sudo scutil --set ComputerName "### INSERT NAME HERE ####"
+sudo scutil --set HostName "### INSERT NAME HERE ####"
+sudo scutil --set LocalHostName "### INSERT NAME HERE ####"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "### INSERT NAME HERE ####"
 
 ### Set standby delay to 24 hours (default is 1 hour)
-sudo pmset -a standbydelay 86400
+sudo pmset -a standbydelay 7200
 
 ### Disable the sound effects on boot
 #sudo nvram SystemAudioVolume=" "
@@ -204,7 +204,7 @@ sudo systemsetup -settimezone "Europe/Berlin" > /dev/null
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 ### Stop iTunes from responding to the keyboard media keys
-launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+#launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
 ###############################################################################
 # Screen                                                                      #
@@ -414,9 +414,9 @@ defaults write com.apple.dock showhidden -bool true
 sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app" "/Applications/iOS Simulator.app"
 
 ### Add a spacer to the left side of the Dock (where the applications are)
-defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+#defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
 ### Add a spacer to the right side of the Dock (where the Trash is)
-defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
+#defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
 
 ### Hot corners -- Possible values:
 #  0: no-op                     5: Start screen saver     11: Launchpad

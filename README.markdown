@@ -50,8 +50,6 @@
     + **Install Ruby 2.2.3 Global**: `rbenv install 2.2.3`; `rbenv rehash`; `rbenv global 2.2.3`
     + **Compass**: `gem install compass --no-document`
     + **JSON**: `gem install json`
-    + **rake**: `gem install rake`
-    + **rdoc**: `gem install rdoc`
 - **node.js**: `brew install node`
     + ¿ Why ? _add "/usr/local/share/npm/bin" to $PATH_
     + `sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer`

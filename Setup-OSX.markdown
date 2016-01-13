@@ -1,29 +1,30 @@
 # Setup a freshly installed OS X #
 
+List of software and required steps to setup a new OS X efficiently.
+
 ## First steps ##
 
 1. Update OS 
-X2. Install XCode
-3. "Configure OS X: Part 1" (see below)
-4. Install [iTerm2][it2]
-5. "Configure OS X: Part 2" & "Shell extension" (see below)
-6. Install [1Password][1p]
-7. Install [Little Snitch][ls]
-8. Install [Spectacle][spec]
-9. Install [LaunchBar][lb]
-10. Install [Google Chrome][gc]
-11. Install [Sublime Text 3][st3]
-12. Install [Commander One][co]
-13. ...
+. Install XCode
+. Install [Dropbox][db]
+. Install [1Password][1p]
+. "Configure OS X: Part 1" (see below)
+. Install [iTerm2][it2]
+. "Configure OS X: Part 2" & "Shell extension" (see below)
+. Install [Little Snitch][ls]
+. Install [Spectacle][spec]
+. Install [LaunchBar][lb]
+. Install [Google Chrome][gc]
+. Install [Sublime Text 3][st3]
+. Install [PathFinder][pf]
+. ...
 
+### Configure OS X ###
 
-### Configure OS X: Part 1 ###
-
-- Clone GUI settings from MacBook Pro _/riverwind/_
+- Use `setup-osx-sys.sh` to configure specific OS X parameters
+- Manually clone GUI settings from latest OS X system
 
 ### Configure OS X: Part 2 ###
-
-- Use `setup-osx-system.sh` to configure OS X
 
 ### Shell extensions ###
 
@@ -63,7 +64,7 @@ X2. Install XCode
 3. [Todoist][todi] (Appstore)
 4. [LiteIcons][li]
 5. [Dash][da]
-6. [Dropbox][db]
+6. 
 7. [HardwareGrowler][hwgr] (Appstore)
 8. [CheatSheet][cs]
 9. [Harvest][harv] (Appstore)
@@ -85,6 +86,7 @@ X2. Install XCode
 2. [SourceTree][sot]
 3. [Postgress.app][pgap]
 4. [pgAdmin][pgad]
+5. [Vagrant][vagr]
 
 ### Install utilities ###
 
@@ -119,7 +121,7 @@ X2. Install XCode
 ### Dock Icon order ###
 
 1. Finder
-2. Commander/Pathfinder
+2. Pathfinder
 3. Adium
 4. Messages
 5. Skype
@@ -153,7 +155,7 @@ X2. Install XCode
 [lb]: https://www.obdev.at/products/launchbar/index.html
 [gc]: http://www.google.com/chrome/
 [st3]: http://www.sublimetext.com/3
-[co]: http://mac.eltima.com/file-manager.html
+[pf]: http://www.cocoatech.com/pathfinder/
 [hb]: http://brew.sh/
 
 [bt]: http://www.macbartender.com/
@@ -193,5 +195,5 @@ X2. Install XCode
 [sket]: http://bohemiancoding.com/sketch/
 [bino]: http://bino3d.org/
 [betzi]: http://macitbetter.com/
-
+[vagr]: 
 
